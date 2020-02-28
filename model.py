@@ -109,7 +109,7 @@ class Agent(nn.Module):
         """
         torch.save({"state_dict": self.train_model.state_dict(),
                     "optimizer": self.optimizer.state_dict()
-                    }, "Breakout.pth")
+                    }, args.saved_as)
     
     def load(self, name):
         """
