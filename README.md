@@ -16,7 +16,8 @@ python3 install -r requirements.txt
   `--memory` `--batch_size` <br />
   `--gamma` `--learning_rate` <br />
   `--episodes` `--record` <br />
-  `--test` `render` <br />
+  `--test` `--saved_as` <br />
+  `--render` <br />
   
 ## **EVAL**: <br />
   To view test the model just put this: <br />
