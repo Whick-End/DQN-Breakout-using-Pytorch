@@ -28,3 +28,32 @@ python3 install -r requirements.txt
   *PS*: Try them
   
   <br />
+  <br />
+  
+### **DEFAULT HYPER PARAMETERS**:
+  ```python3
+  # Hyper Parameters
+  parser.add_argument('--epsilon', type=float, 
+                          help='Set the start value of epsilon', default=1.0)
+  parser.add_argument('--min_epsilon', type=float, 
+                          help='End of epsilon value', default=0.01)
+  parser.add_argument('--memory', type=int, 
+                          help='Memory size', default=100000)
+  parser.add_argument('--batch_size', type=int, 
+                          help='Batch size', default=32)
+  parser.add_argument('--gamma', type=float, 
+                          help='Gamma value', default=0.99)
+  parser.add_argument('--learning_rate', type=float, 
+                          help='Learning rate value', default=0.0005)
+  parser.add_argument('--episodes', type=int, 
+                          help='Number of episode', default=10000)
+  parser.add_argument('--record', action='store_true', 
+                          help='Record boolean')
+  parser.add_argument('--test', type=str, 
+                          help='Set model to test it', default='Breakout.pth)
+  parser.add_argument('--saved_as', type=str, 
+                          help='Name to save it', default='Breakout.pth)
+  parser.add_argument('--render', action='store_true', 
+                          help='Render Boolean')
+                        ```
+  
