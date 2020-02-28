@@ -30,7 +30,7 @@ python3 install -r requirements.txt
   ```
   
   Obviously, in the folder models, there are **trained model** <br />
-  *PS*: Try them
+  *PS*: Try them :P
   
 <br />
   
