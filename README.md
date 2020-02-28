@@ -24,4 +24,7 @@ python3 install -r requirements.txt
   python3 main.py --test YOUR_MODEL.pth
   ```
   
+  Obviously, in the folder model, there are **trained model**
+  *PS*: Try them
+  
   <br />
