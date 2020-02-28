@@ -56,5 +56,12 @@ python3 install -r requirements.txt
                           help='Name to save it', default='Breakout.pth)
   parser.add_argument('--render', action='store_true', 
                           help='Render Boolean')
-                        ```
-  
+ ```
+<br />
+
+### ** More info**:
+  I've used **Deep Q Learning**, to train the model with totally **off-policy** using Replay Memory <br />
+  In the learn function, I used *bellman equation* <br />
+  `REWARDS + GAMMA * Q_NEXT`
+  To set the target value,
+  Thanks for watching my github page,
