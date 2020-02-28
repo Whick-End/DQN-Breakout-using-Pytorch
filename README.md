@@ -21,6 +21,6 @@ python3 install -r requirements.txt
 -**EVAL**: <br />
   To view test the model just put this: <br />
   ```shell
-  pytohn3 main.py --test NN_Saved.pth
+  python3 main.py --test NN_Saved.pth
   ```
   <br />
