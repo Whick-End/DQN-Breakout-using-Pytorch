@@ -1,8 +1,10 @@
 # DQN-Breakout-using-Pytorch
 This project, is an **AI**, using openai/gym to play ***Breakout*** <br />
-Requirements: ```shell
+Requirements:
+```shell
 python3 install -r requirements.txt
-``` <br /> <br />
+``` 
+<br /> <br />
 ![alt text](/records/DQN_Breakout.gif)
 
 -**LEARN**: <br />
@@ -18,4 +20,7 @@ python3 install -r requirements.txt
   
 -**EVAL**: <br />
   To view test the model just put this: <br />
-  `pytohn3 main.py --test NN_Saved.pth` <br />
+  ```shell
+  pytohn3 main.py --test NN_Saved.pth
+  ```
+  <br />
