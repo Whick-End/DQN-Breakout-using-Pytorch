@@ -14,4 +14,4 @@ Requirements: `python3 install -r requirements.txt` <br /> <br />
   
 -**EVAL**: <br />
   To view test the model just put this: <br />
-  `pytohn3 main.py --test ```NN_Saved.pth```` <br />
+  `pytohn3 main.py --test NN_Saved.pth` <br />
