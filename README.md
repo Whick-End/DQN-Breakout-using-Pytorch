@@ -63,5 +63,5 @@ python3 install -r requirements.txt
   I've used **Deep Q Learning**, to train the model with totally **off-policy** using Replay Memory <br />
   In the learn function, I used *bellman equation* <br />
   `REWARDS + GAMMA * Q_NEXT`
-  to set the target value, <br />
+  to set targets values, <br />
   Thanks for watching my github page,
