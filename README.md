@@ -7,6 +7,8 @@ python3 install -r requirements.txt
 <br /> <br />
 ![alt text](/records/DQN_Breakout.gif)
 
+<br />
+
 ## **LEARN**: <br />
   ```shell
   python3 main.py
@@ -18,7 +20,9 @@ python3 install -r requirements.txt
   `--episodes` `--record` <br />
   `--test` `--saved_as` <br />
   `--render` <br />
-  
+ 
+<br />
+ 
 ## **EVAL**: <br />
   To view test the model just put this: <br />
   ```shell
@@ -28,8 +32,7 @@ python3 install -r requirements.txt
   Obviously, in the folder models, there are **trained model** <br />
   *PS*: Try them
   
-  <br />
-  <br />
+<br />
   
 ### **DEFAULT HYPER PARAMETERS**:
   ```python3
