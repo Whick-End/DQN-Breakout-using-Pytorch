@@ -27,9 +27,9 @@ parser.add_argument('--episodes', type=int,
 parser.add_argument('--record', action='store_true', 
                         help='Record boolean')
 parser.add_argument('--test', type=str, 
-                        help='Set model to test it')
+                        help='Set model to test it', default='Breakout.pth)
 parser.add_argument('--saved_as', type=str, 
-                        help='Name to save it')
+                        help='Name to save it', default='Breakout.pth)
 parser.add_argument('--render', action='store_true', 
                         help='Render Boolean')
 
