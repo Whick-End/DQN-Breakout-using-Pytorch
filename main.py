@@ -21,7 +21,7 @@ parser.add_argument('--batch_size', type=int,
 parser.add_argument('--gamma', type=float, 
                         help='Gamma value', default=0.99)
 parser.add_argument('--learning_rate', type=float, 
-                        help='Learning rate value', default=0.0005)
+                        help='Learning rate value', default=0.0003)
 parser.add_argument('--episodes', type=int, 
                         help='Number of episode', default=10000)
 parser.add_argument('--record', action='store_true', 
