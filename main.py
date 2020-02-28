@@ -26,8 +26,8 @@ parser.add_argument('--episodes', type=int,
                         help='Number of episode', default=10000)
 parser.add_argument('--record', action='store_true', 
                         help='Record boolean')
-parser.add_argument('--test', action='store_true', 
-                        help='Eval boolean')
+parser.add_argument('--test', type=str, 
+                        help='Set model to test it')
 parser.add_argument('--render', action='store_true', 
                         help='Render Boolean')
 
@@ -64,10 +64,10 @@ if __name__ == '__main__':
     
     else:
         # Try to load model
-        file = Path('Breakout.pth')
+        file = Path(args.test)
         
         if file.is_file():
-            agent.load('Breakout.pth')
+            agent.load(args.test)
             
         else:
             print('File not found')
