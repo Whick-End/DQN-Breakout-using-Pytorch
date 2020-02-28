@@ -1,10 +1,14 @@
 # DQN-Breakout-using-Pytorch
 This project, is an **AI**, using openai/gym to play ***Breakout*** <br />
-Requirements: `python3 install -r requirements.txt` <br /> <br />
+Requirements: ```shell
+python3 install -r requirements.txt
+``` <br /> <br />
 ![alt text](/records/DQN_Breakout.gif)
 
 -**LEARN**: <br />
-  `python3 main.py`
+  ```shell
+  python3 main.py
+  ```
   You can set all the parameters <br />
   `--epsilon` `--min_epsilon` <br />
   `--memory` `--batch_size` <br />
