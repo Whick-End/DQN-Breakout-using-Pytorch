@@ -7,7 +7,7 @@ python3 install -r requirements.txt
 <br /> <br />
 ![alt text](/records/DQN_Breakout.gif)
 
--**LEARN**: <br />
+#**LEARN**: <br />
   ```shell
   python3 main.py
   ```
@@ -18,9 +18,10 @@ python3 install -r requirements.txt
   `--episodes` `--record` <br />
   `--test` `render` <br />
   
--**EVAL**: <br />
+#**EVAL**: <br />
   To view test the model just put this: <br />
   ```shell
-  python3 main.py --test NN_Saved.pth
+  python3 main.py --test YOUR_MODEL.pth
   ```
+  
   <br />
