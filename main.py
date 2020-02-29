@@ -27,7 +27,7 @@ parser.add_argument('--episodes', type=int,
 parser.add_argument('--record', action='store_true', 
                         help='Record boolean')
 parser.add_argument('--test', type=str, 
-                        help='Set model to test it', default='Breakout.pth')
+                        help='Set model to test it', default='')
 parser.add_argument('--saved_as', type=str, 
                         help='Name to save it', default='Breakout.pth')
 parser.add_argument('--render', action='store_true', 
@@ -48,7 +48,7 @@ if __name__ == '__main__':
     if args.record:
         env = wrappers.Monitor(env, "records/Breakout", video_callable=lambda episode_id:True, force=True)
     
-    if not args.test:
+    if args.test == '':
         # Training
         for episode in range(1, args.episodes):
             reward, epsilon = train(env, args.render)
