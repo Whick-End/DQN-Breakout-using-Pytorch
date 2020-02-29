@@ -26,7 +26,11 @@ python3 install -r requirements.txt
 ## **EVAL**: <br />
   To view test the model just put this: <br />
   ```shell
-  python3 main.py --test YOUR_MODEL.pth
+  python3 main.py --test YOUR_MODEL.pth --render --record
+  ```
+  **Exemple**:
+  ```shell
+  python3 main.py --test Breakout.pth --render --record
   ```
   
   Obviously, in the folder models, there are **trained model** <br />
