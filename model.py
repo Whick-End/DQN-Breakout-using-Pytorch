@@ -119,7 +119,7 @@ class Agent(nn.Module):
         """
         
         # Try to load model
-        file = Path(args.test)
+        file = Path(name)
         
         if file.is_file():
             checkpoint = torch.load(name)
