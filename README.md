@@ -11,15 +11,15 @@ python3 install -r requirements.txt
 
 ## **LEARN**: <br />
   ```shell
-  python3 main.py
+  python3 main.py --saved_as YOUR_MODEL.pth --record
   ```
   You can set all the parameters <br />
   `--epsilon` `--min_epsilon` <br />
   `--memory` `--batch_size` <br />
   `--gamma` `--learning_rate` <br />
   `--episodes` `--record` <br />
-  `--test` `--saved_as` <br />
-  `--render` <br />
+  `--test` `--train` <br />
+  `--saved_as` `--render` <br />
  
 <br />
  
@@ -59,6 +59,8 @@ python3 install -r requirements.txt
                           help='Record boolean')
   parser.add_argument('--test', type=str, 
                           help='Set model to test it', default='Breakout.pth)
+  parser.add_argument('--train', type=str, 
+                        help='Set model to train it', default='')
   parser.add_argument('--saved_as', type=str, 
                           help='Name to save it', default='Breakout.pth)
   parser.add_argument('--render', action='store_true', 
