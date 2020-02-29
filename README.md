@@ -30,7 +30,7 @@ python3 install -r requirements.txt
   ```
   **Exemple**:
   ```shell
-  python3 main.py --test Breakout.pth --render --record
+  python3 main.py --test models/Breakout.pth --render --record
   ```
   
   Obviously, in the folder models, there are **trained model** <br />
