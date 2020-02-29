@@ -3,7 +3,6 @@ import torch
 import argparse
 import gym.wrappers as wrappers
 from train import *
-import sys
 
 
 parser = argparse.ArgumentParser()
