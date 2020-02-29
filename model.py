@@ -5,9 +5,11 @@ import torch.optim as optim
 from random import randint
 from collections import namedtuple
 import matplotlib.pyplot as plt
+from pathlib import Path
 from main import args
 import numpy as np
 import random
+import sys
 
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu:0')
@@ -115,10 +117,19 @@ class Agent(nn.Module):
         """
         Load model
         """
-        checkpoint = torch.load(name)
-        self.train_model.load_state_dict(checkpoint['state_dict'])
-        self.optimizer.load_state_dict(checkpoint['optimizer'])
-    
+        
+        # Try to load model
+        file = Path(args.test)
+        
+        if file.is_file():
+            checkpoint = torch.load(name)
+            self.train_model.load_state_dict(checkpoint['state_dict'])
+            self.optimizer.load_state_dict(checkpoint['optimizer'])
+            
+        else:
+            print('File not found')
+            sys.exit(1)
+        
     def take_action(self, frame):
         """
         Use epsilon greedy strategy,
